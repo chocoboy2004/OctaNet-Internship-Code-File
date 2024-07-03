@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #53A05D;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    /* margin: auto; */
+    /* padding-top: 20px; */
+    /* margin-top: 30px; */
+    /* margin-bottom: 30px; */
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 300px;
+}
+
+.left, .right, .nav {
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    gap: 20px;
+}
+
+.left > div {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.logo {
+    width: 100px;
+    border-radius: 100px;
+}
+
+.profile {
+    width: 50px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.nav {
+    gap: 120px;
+    list-style: none;
+}
+
+.nav > li > a {
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+}
+
+.right {
+    gap: 30px;
+}
+
+.download {
+    /* height: 40px; */
+    padding: 15px;
+    font-size: medium;
+    border-radius: 20px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* column-gap: 100px; */
+    margin-top: 50px;
+}
+
+.image > img {
+    width: 600px;
+}
+
+.p {
+    font-size: 75px;
+    font-weight: bolder;
+}
+
+.p > span {
+    color: blue;
+}
+
+.para {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.tail {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.links > ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    list-style: none;
+}
+
+.links > ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 500px) {
+    .head {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 30px;
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+    .left {
+        gap: 5px;
+    }
+
+    .left > div {
+        display: none;
+    }
+
+    .nav {
+        gap: 10px;
+    }
+
+    .nav > li {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .download {
+        /* height: 40px; */
+        padding: 5px;
+        font-size: medium;
+        border-radius: 20px;
+        border: 1px solid white;
+        cursor: pointer;
+    }
+
+    .profile {
+        width: 40px;
+    }
+
+    .right {
+        gap: 10px;
+    }
+
+    .p {
+        font-size: 50px;
+        font-weight: bolder;
+    }
+
+    .text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .para {
+        font-size: 20px;
+    }
+
+    .image > img {
+        width: 500px;
+    }
+
+    .links > ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        list-style: none;
+    }
+}
